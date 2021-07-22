@@ -1,6 +1,6 @@
 from django.db import models
-
 from django.db.models.fields import PositiveBigIntegerField
+from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
 class Student(models.Model):
@@ -17,15 +17,17 @@ class Student(models.Model):
         ('M',"Male")
     )
     Gender=models.CharField(max_length=10,choices=CHOICES)
+    phoneNumber = PhoneNumberField(unique = True, null = False, blank = False) 
     Guardian_name=models.CharField(max_length=40)
     Email_address=models.EmailField(max_length=30)
     Country=models.CharField(max_length=30)
-    profile_image=models.CharField(max_length=20)
+    profile_image=models.ImageField()
     Grade=models.CharField(max_length=2)
     Medical_report=models.FileField(upload_to='uploads',blank=True)
     date_Of_enrollment=models.DateField()
     course_name=models.CharField(max_length=30)
     Laptop_number=models.CharField(max_length=7)
+
     # Languages=models.ListField()
     # phone_number=models.Phone
 
