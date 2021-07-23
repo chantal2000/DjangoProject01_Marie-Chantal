@@ -16,12 +16,16 @@
 <body class="p-3 mb-2 bg-success text-white">
     <h1>STUDENT REGISTRATION FORM</h1>
     <form method="POST">
-        <div class="h-50 d-inline-block bg-info" style="width: 120px;">
+        <div style="width: 120px;">
+            {{form.as_p}}
+            <!-- <div class="form-control" id="usr"> -->
+            <!-- <div class="h-50 d-inline-block bg-info" style="width: 120px;"> -->
             {{form.as_p}}
         </div>
-
-        <button type=" button " class="btn btn-success ">Register</button>
         <!-- </div> -->
+
+        <button type=" button " class="btn btn-warning">Register</button>
+        </div>
     </form>
 </body>
 
