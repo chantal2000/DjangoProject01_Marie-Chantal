@@ -3,6 +3,7 @@
 <html>
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
@@ -14,19 +15,25 @@
 </head>
 
 <body class="p-3 mb-2 bg-success text-white">
-    <h1>STUDENT REGISTRATION FORM</h1>
-    <form method="POST">
-        <div style="width: 120px;">
-            {{form.as_p}}
-            <!-- <div class="form-control" id="usr"> -->
-            <!-- <div class="h-50 d-inline-block bg-info" style="width: 120px;"> -->
-            {{form.as_p}}
-        </div>
-        <!-- </div> -->
+    <div class="cen">
+        <div class="col-md-10 col-md-offset-1">
+            <h1 style="text-align: center;">STUDENT REGISTRATION FORM</h1>
 
-        <button type=" button " class="btn btn-warning">Register</button>
+            <!-- <h1>STUDENT REGISTRATION FORM</h1> -->
+            <form method="POST" style="margin-left: 40%;">
+                <div style="width: 120px;">
+                    {{form.as_p}}
+                    <!-- <div class="form-control" id="usr"> -->
+                    <!-- <div class="h-50 d-inline-block bg-info" style="width: 120px;"> -->
+                    <!-- {{form.as_p}} -->
+                </div>
+                <!-- </div> -->
+
+                <button type=" button " class="btn btn-warning">Register</button>
         </div>
-    </form>
+        </form>
+    </div>
+    </div>
 </body>
 
 </html>
