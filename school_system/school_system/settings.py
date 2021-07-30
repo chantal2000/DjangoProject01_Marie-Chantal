@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'student',
     'phonenumber_field',
-    'bootstrap4'
+    'bootstrap4',
+    'rest_framework'
+
 ]
 
 MIDDLEWARE = [
